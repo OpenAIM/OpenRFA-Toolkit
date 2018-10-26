@@ -1,0 +1,25 @@
+﻿<Window x:Class="SupportWindow.Support"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SupportWindow"
+             mc:Ignorable="d" Height="185.952" ResizeMode="NoResize" Title="OpenRFA Support" Width="300">
+    <Grid>
+        <StackPanel Margin="9,36,11,97.5" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="2.538"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="2.216"/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+        </StackPanel>
+        <Button x:Name="btnSupport" Content="Support on Slack" Margin="40,78,40,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.5,0.5" Click="btnSupport_Click" />
+        <TextBlock Margin="0,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center"><Run Text="Need help or have a feature request?"/><LineBreak/><Run Text="Contact us below."/></TextBlock>
+        <Button x:Name="btnSupportWww" Content="Support on OpenRFA.org" Margin="40,114,40,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.5,0.5" Click="btnSupportWww_Click" />
+
+
+    </Grid>
+</Window>

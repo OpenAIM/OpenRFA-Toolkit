@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>About OpenRFA</Text>
+    <Description>Details about OpenRFA</Description>
+    <Assembly>AboutWindow.dll</Assembly>
+    <FullClassName>AboutWindow.Command</FullClassName>
+    <ClientId>
+      f46910f5-0251-4416-a65d-ad67b37338d0
+    </ClientId>
+    <VendorId>BIM Extension, LLC</VendorId>
+    <VendorDescription>BIM Extension, http://BIMextension.com</VendorDescription>
+  </AddIn>
+  <!--<AddIn Type="Application">
+    <Name>Application AboutWindow</Name>
+    <Assembly>AboutWindow.dll</Assembly>
+    <FullClassName>AboutWindow.App</FullClassName>
+    <ClientId>6e4a5511-c4e6-4094-8928-4440fb182547</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>-->
+</RevitAddIns>

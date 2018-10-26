@@ -1,0 +1,53 @@
+﻿<Window x:Name="mainWindow" x:Class="OpenRFA_WPF_CS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OpenRFA_WPF_CS"
+        mc:Ignorable="d"
+        Title="OpenRFA Shared Parameter Browser" Height="782" Width="1400">
+    <Grid>
+        <DataGrid x:Name="gridParams" ItemsSource="{Binding}" AutoGenerateColumns="True" 
+                  AutoGeneratingColumn="gridParams_AutoGeneratingColumn" ScrollViewer.CanContentScroll="True" 
+                  Margin="283,55,0,56.5" HorizontalAlignment="Left" Width="490" 
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  BorderThickness="0"
+                  IsReadOnly="True"
+                  SelectionUnit="FullRow" Foreground="Black" GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#FFCCCCCC"/>
+        <StackPanel x:Name="panelFilters" HorizontalAlignment="Left" Width="264" Background="#FFC7CCD4">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontWeight="Bold" Margin="11,10,0,0"/>
+            <TextBox x:Name="textFilter" TextWrapping="Wrap" Text="" Height="30" VerticalAlignment="Top" TextChanged="textFilter_TextChanged" Padding="4,4,0,0" Margin="11,0,10,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Data Type" VerticalAlignment="Top" FontWeight="Bold" Margin="11,10,0,0"/>
+            <ComboBox x:Name="comboDataType" VerticalAlignment="Top" Height="30" DisplayMemberPath="datatype" Padding="7,6,5,3" Margin="11,0,10,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Margin="11,10,0,0" Text="Group"/>
+            <ComboBox x:Name="comboParamGroup" VerticalAlignment="Top" Height="30" DisplayMemberPath="group" Padding="7,6,5,3" Margin="11,0,10,0" SelectionChanged="comboParamGroup_SelectionChanged"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Margin="11,10,0,0" Text="Parameter Set"/>
+            <ComboBox x:Name="comboParameterSet" VerticalAlignment="Top" Height="30" DisplayMemberPath="parameter_sets" Padding="7,6,5,3" Margin="11,0,10,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Text="Status" Margin="11,10,0,0"/>
+            <StackPanel x:Name="panelStatus" Height="100">
+                <CheckBox x:Name="checkApproved" Content="Approved" IsChecked="True" Margin="11,0,0,0"/>
+                <CheckBox x:Name="checkProposed" Content="Proposed" Margin="11,0,0,0"/>
+                <CheckBox x:Name="checkRejected" Content="Rejected" Margin="11,0,0,0"/>
+            </StackPanel>
+        </StackPanel>
+        <TextBox x:Name="textStatus" Margin="0,0,274,7" TextWrapping="Wrap" HorizontalAlignment="Right" Width="835" Height="38" VerticalAlignment="Bottom" BorderBrush="#00ABADB3" VerticalContentAlignment="Center"/>
+        <DataGrid x:Name="gridCart" ItemsSource="{Binding}" AutoGenerateColumns="True" 
+                  AutoGeneratingColumn="gridParams_AutoGeneratingColumn" ScrollViewer.CanContentScroll="True" 
+                  Margin="895,54.9,10,56.5" SelectionChanged="gridParams_SelectionChanged" 
+                  CanUserAddRows="False" 
+                  CanUserDeleteRows="False" 
+                  BorderThickness="0" Width="490"
+                  IsReadOnly="True"
+                  SelectionUnit="FullRow" GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#FFCCCCCC"/>
+        <Button x:Name="buttonAdd" Content="Add &gt;" HorizontalAlignment="Left" Margin="778,343,0,0" VerticalAlignment="Top" Width="112" Click="buttonAdd_Click" Height="33"/>
+        <Button x:Name="buttonRemove" Content="&lt; Remove" HorizontalAlignment="Left" Margin="778,381,0,0" VerticalAlignment="Top" Width="112" Height="33" Click="buttonRemove_Click"/>
+        <Button x:Name="buttonCommit" Content="Next" Margin="0,0,10,7" Background="#FF1984C1" Foreground="White" BorderBrush="#FF004A95" Height="38" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="178" Click="buttonCommit_Click"/>
+        <Button x:Name="buttonCancel" IsCancel="True" Content="Cancel" Margin="0,0,193,7" Height="38" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="76" Click="buttonCancel_Click"/>
+        <WrapPanel x:Name="panelButtons" Margin="10,0,0,0" HorizontalAlignment="Left" Width="244" VerticalAlignment="Bottom" Height="46">
+            <Button x:Name="buttonSearch" Content="Filter" Click="buttonSearch_Click" Height="36" VerticalAlignment="Top" Background="#FF3A5071" Foreground="White" HorizontalAlignment="Right" Width="161" Margin="0"/>
+            <Button x:Name="buttonReset" Content="Reset" VerticalAlignment="Top" Height="36" Click="buttonReset_Click" HorizontalAlignment="Right" Width="83" Margin="0" Background="White"/>
+        </WrapPanel>
+        <Button x:Name="buttNewParam" Content="New Parameter" HorizontalAlignment="Left" Margin="283,10,0,0" Width="101" ToolTip="Propose a new shared parameter on OpenRFA." Click="buttNewParam_Click" Height="40" VerticalAlignment="Top" Background="#FF3A5071" Foreground="White" BorderBrush="Black"/>
+    </Grid>
+</Window>

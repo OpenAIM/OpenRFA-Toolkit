@@ -1,0 +1,36 @@
+﻿<Window x:Name="WinConfigureImport" x:Class="OpenRFA_WPF_CS.ConfigureImport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OpenRFA_WPF_CS"
+        mc:Ignorable="d"
+        Title="Configure" Height="623.5" Width="729.25">
+    <Window.Resources>
+        <Style TargetType="{x:Type ComboBox}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="IsDropDownOpen" Value="true" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <DataGrid ItemsSource="{Binding}" x:Name="gridParamCon" Margin="10,10,10,48" AutoGenerateColumns="False" CurrentCellChanged="gridParamCon_CurrentCellChanged" SelectionChanged="gridParamCon_SelectionChanged" CanUserAddRows="False" HorizontalGridLinesBrush="#FFCCCCCC" VerticalGridLinesBrush="#FFCCCCCC">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Parameter}" Header="Parameter"/>
+                <DataGridComboBoxColumn Width="200" x:Name="AssignGroup" 
+                    Header="Group"
+                    SelectedItemBinding="{Binding AssignGroup}"
+                    />
+                <DataGridComboBoxColumn Width="100" x:Name="InstanceOrType" 
+                    Header="Binding"
+                    SelectedValueBinding="{Binding InstanceOrType}"  
+                    DisplayMemberPath="{Binding InstanceOrType}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="ButtonImport" Content="Import" Margin="0,0,10,7" Click="ButtonImport_Click" Height="33" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="77" Background="#FF1984C1" Foreground="White" BorderBrush="#FF004A7E"/>
+        <Button x:Name="ButtonCancel" Content="Cancel" HorizontalAlignment="Right" Margin="0,0,92,7" Width="76" Click="ButtonCancel_Click" Height="33" VerticalAlignment="Bottom" />
+
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Load OpenRFA Parameters</Text>
+    <Description>Some description for OpenRFA_WPF_CS</Description>
+    <Assembly>LoadParametersToFamily.dll</Assembly>
+    <FullClassName>OpenRFA_WPF_CS.Command</FullClassName>
+    <ClientId>
+      34d082ea-4d37-4e3d-be5a-77fdb01a54a2
+    </ClientId>
+    <VendorId>BIM Extension, LLC</VendorId>
+    <VendorDescription>BIM Extension, http://BIMextension.com</VendorDescription>
+  </AddIn>
+  <!--<AddIn Type="Application">
+    <Name>Load OpenRFA Parameters</Name>
+    <Assembly>LoadParametersToFamily.dll</Assembly>
+    <FullClassName>OpenRFA_WPF_CS.App</FullClassName>
+    <ClientId>
+      1d101961-7895-45fd-935d-1cfde88d7802
+    </ClientId>
+    <VendorId>BIMextension.com</VendorId>
+    <VendorDescription>BIM Extension, LLC, http://BIMextension.com</VendorDescription>
+  </AddIn>-->
+</RevitAddIns>

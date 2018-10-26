@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>OpenRFA Ribbon</Name>
+    <Assembly>OpenRfaRibbon.dll</Assembly>
+    <AddInId>
+      6f081fa1-0efb-4a52-848c-12fe19daf146
+    </AddInId>
+    <FullClassName>OpenRfaRibbon.App</FullClassName>
+    <VendorId>BIM Extension, LLC</VendorId>
+    <VendorDescription>BIM Extension, http://BIMextension.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>About OpenRFA</Text>
+    <Description>Details about OpenRFA</Description>
+    <Assembly>OpenRfaAbout.dll</Assembly>
+    <FullClassName>AboutWindow.Command</FullClassName>
+    <ClientId>
+      f46910f5-0251-4416-a65d-ad67b37338d0
+    </ClientId>
+    <VendorId>BIM Extension, LLC</VendorId>
+    <VendorDescription>BIM Extension, http://BIMextension.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>Load OpenRFA Parameters</Text>
+    <Description>Some description for OpenRFA_WPF_CS</Description>
+    <Assembly>OpenRfaLoadToFamily.dll</Assembly>
+    <FullClassName>OpenRFA_WPF_CS.Command</FullClassName>
+    <ClientId>
+      34d082ea-4d37-4e3d-be5a-77fdb01a54a2
+    </ClientId>
+    <VendorId>BIM Extension, LLC</VendorId>
+    <VendorDescription>BIM Extension, http://BIMextension.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>Load Parameters To Multiple Families</Text>
+    <Description>Load the OpenRFA shared parameters to multiple families.</Description>
+    <Assembly>OpenRfaLoadToMultiple.dll</Assembly>
+    <FullClassName>LoadParametersToMultiple.Command</FullClassName>
+    <ClientId>
+      d0dfb3ca-3de0-4ef8-8f5e-b8efb529e433
+    </ClientId>
+    <VendorId>BIM Extension, LLC</VendorId>
+    <VendorDescription>BIM Extension, http://BIMextension.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>OpenRFA Support</Text>
+    <Description>Technical support for OpenRFA</Description>
+    <Assembly>OpenRfaSupport.dll</Assembly>
+    <FullClassName>SupportWindow.Command</FullClassName>
+    <ClientId>
+      bbe837ac-87f3-4644-bebc-587ca8591582
+    </ClientId>
+    <VendorId>BIM Extension, LLC</VendorId>
+    <VendorDescription>BIM Extension, http://BIMextension.com</VendorDescription>
+  </AddIn>
+
+</RevitAddIns>

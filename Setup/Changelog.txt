@@ -1,0 +1,19 @@
+=========
+CHANGELOG
+=========
+
+0.2.1 - Feb 23 2018
+Private Beta Release
+
+- Added tools:
+-- Load shared parameters to multiple families
+-- Technical support window
+-- About OpenRFA window 
+
+- Added code signing certificate to add-ins
+
+-----
+0.1 - Jan 27 2018 
+Initial Release
+
+- Includes add-in to batch load shared parameters to Revit family currently open (active document)

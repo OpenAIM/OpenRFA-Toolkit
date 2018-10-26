@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Load Parameters To Multiple Families</Text>
+    <Description>Load the OpenRFA shared parameters to multiple families.</Description>
+    <Assembly>LoadParametersToMultiple.dll</Assembly>
+    <FullClassName>LoadParametersToMultiple.Command</FullClassName>
+    <ClientId>
+      d0dfb3ca-3de0-4ef8-8f5e-b8efb529e433
+    </ClientId>
+    <VendorId>BIM Extension, LLC</VendorId>
+    <VendorDescription>BIM Extension, http://BIMextension.com</VendorDescription>
+  </AddIn>
+  <!--<AddIn Type="Application">
+    <Name>Application LoadParametersToMultiple</Name>
+    <Assembly>LoadParametersToMultiple.dll</Assembly>
+    <FullClassName>LoadParametersToMultiple.App</FullClassName>
+    <ClientId>d5f629f9-bf5a-4b05-b0bc-a7a25f9b97ea</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>-->
+</RevitAddIns>
