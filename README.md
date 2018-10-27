@@ -7,6 +7,7 @@ The OpenRFA Toolkit is a suite of Revit add-ins which seek to utilize the OpenRF
 This set of add-ins give users the ability to load OpenRFA shared parameters in batch.
 
 ![alt text](screenshots/screenshot.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FOpenAIM%2FOpenRFA-Toolkit.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FOpenAIM%2FOpenRFA-Toolkit?ref=badge_shield)
 
 The add-in connects to the live database on OpenRFA.org to verify that the user has the most up-to-date shared parameter definitions. If the local version of the definitions are out of date, the user has the option to download the most recent definitions from OpenRFA.org.
 
@@ -19,3 +20,6 @@ This tool allows users to load a set of shared parameters into the currently ope
 ### Load Parameters To Multiple Families
 
 This tool features the ability to load multiple shared parameters to *multiple families*. Rather than loading the parameters into the current Revit family, the user will be prompted to select multiple Revit families (rfa files). The add-in will then add all shared parameters to the selected families in batch.
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FOpenAIM%2FOpenRFA-Toolkit.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FOpenAIM%2FOpenRFA-Toolkit?ref=badge_large)
